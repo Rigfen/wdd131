@@ -1,0 +1,70 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+header{
+text-align:center;
+padding:1rem;
+background:#444;
+color:white;
+}
+
+.hero img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.data,
+.weather{
+margin:1rem;
+padding:1rem;
+border:2px solid #ccc;
+background:white;
+}
+
+.data h2,
+.weather h2{
+text-align:center;
+margin-bottom:.5rem;
+}
+
+.weather img{
+display:block;
+margin:auto;
+width:50px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:1rem;
+background:#444;
+color:white;
+}
+
+@media (min-width: 768px){
+
+main{
+position:relative;
+}
+
+.data{
+position:absolute;
+top:120px;
+left:30px;
+width:250px;
+}
+
+.weather{
+position:absolute;
+bottom:40px;
+right:30px;
+width:250px;
+}
+
+}
