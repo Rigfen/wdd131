@@ -22,6 +22,10 @@ header {
   border-radius: var(--border-radius);
 }
 
+h2::after {
+  content: " ✨";
+}
+
 .hero img{
 width:100%;
 height:auto;
