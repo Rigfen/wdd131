@@ -5,11 +5,21 @@ box-sizing:border-box;
 font-family: Arial, sans-serif;
 }
 
-header{
-text-align:center;
-padding:1rem;
-background:#444;
-color:white;
+:root {
+  --main-color: #4b0d73;
+  --accent-color: #f2f2f2;
+  --text-color: #333;
+  --border-radius: 10px;
+}
+
+header {
+  background: var(--main-color);
+  color: white;
+}
+
+.data, .weather {
+  background: var(--accent-color);
+  border-radius: var(--border-radius);
 }
 
 .hero img{
