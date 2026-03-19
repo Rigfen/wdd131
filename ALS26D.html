@@ -3,46 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photo Showcase</title>
+  <title>ALS-26D</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-      padding: 10px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    /* Desktop layout */
-    @media (min-width: 768px) {
-      .gallery {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles/ALS26D.css">
+  <script src="scripts/ALS26D.js" defer></script>
 </head>
 
 <body>
 
-<div class="gallery">
+<header>
+  <h1>ALS-26D</h1>
+  <p class="dates">Feb 23 2026 – March 26 2026</p>
+</header>
 
-  <img src="images/ALS2_0001.jpg" alt="Photo 1">
-  <img src="images/ALS2_0002.jpg" alt="Photo 2">
-  <img src="images/ALS2_0003.jpg" alt="Photo 3">
+<main>
 
+  <!-- GALLERY -->
+  <section class="gallery">
+    <img src="images/ALS2_0001.jpg" alt="Photo 1">
+    <img src="images/ALS2_0002.jpg" alt="Photo 2">
+    <img src="images/ALS2_0003.jpg" alt="Photo 3">
+    
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video">
+    <h2>Video Tribute</h2>
+    <video controls>
+      <source src="video/yourvideo.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </section>
+
+  <!-- IN MEMORY -->
+  <section class="memory">
+    <h2>In Memory Of</h2>
+    <div class="names">
+      <p>Jonathan Choi</p>
+      <p>Camryn Little</p>
+      <p>Bastien Grey</p>
+      <p>Bricen Parker</p>
+      <p>Carter Nussbaum</p>
+      <p>Darien Abreu</p>
+      <p>Javier Gonzalez</p>
+      <p>Julia Balais</p>
+      <p>Ackeem Watt</p>
+      <p>Morrigan Moyer</p>
+      <p>Nicholas Caplin</p>
+      <p>Noah Klaus</p>
+      <p>Schwartz</p>
+      <p>Thomas Steele</p>
+      <p>Seth Ebert</p>
+      <p>Jared Larsen</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FULLSCREEN IMAGE -->
+<div id="overlay">
+  <img id="fullImage" src="" alt="Full view">
 </div>
+
+<footer>
+  <p>ALS-26D Tribute</p>
+</footer>
 
 </body>
 </html>
