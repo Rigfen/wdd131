@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Showcase</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Desktop layout */
+    @media (min-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="gallery">
+
+  <img src="images/Als_0001.jpg" alt="Photo 1">
+  <img src="images/Als_0002.jpg" alt="Photo 2">
+  <img src="images/Als_0003.jpg" alt="Photo 3">
+  <img src="images/Als_0004.jpg" alt="Photo 4">
+
+</div>
+
+</body>
+</html>
