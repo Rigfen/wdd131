@@ -52,7 +52,13 @@ margin:auto;
 width:50px;
 }
 
-/* FOOTER */
+@media (min-width: 768px) {
+  .weather h2::after {
+    content: " 🌤️";
+    margin-left: 10px;
+  }
+}
+
 
 footer{
 text-align:center;
