@@ -99,6 +99,8 @@ const temples = [
 function displayTemples(temples) {
   const gallery = document.querySelector(".gallery");
 
+  gallery.innerHTML = "";
+
   temples.forEach(temple => {
     const figure = document.createElement("figure");
 
@@ -118,3 +120,36 @@ function displayTemples(temples) {
 }
 
 displayTemples(temples);
+
+
+document.querySelector("#home").addEventListener("click", () => {
+  displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+  const oldTemples = temples.filter(temple => {
+    return parseInt(temple.dedicated.split(",")[0]) < 1900;
+  });
+  displayTemples(oldTemples);
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+  const newTemples = temples.filter(temple => {
+    return parseInt(temple.dedicated.split(",")[0]) > 2000;
+  });
+  displayTemples(newTemples);
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+  const largeTemples = temples.filter(temple => {
+    return temple.area > 90000;
+  });
+  displayTemples(largeTemples);
+});
+
+document.querySelector("#small").addEventListener("click", () => {
+  const smallTemples = temples.filter(temple => {
+    return temple.area < 10000;
+  });
+  displayTemples(smallTemples);
+});
