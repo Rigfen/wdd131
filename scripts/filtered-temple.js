@@ -116,3 +116,5 @@ function displayTemples(temples) {
     gallery.appendChild(figure);
   });
 }
+
+displayTemples(temples);
