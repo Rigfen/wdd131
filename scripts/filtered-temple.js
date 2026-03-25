@@ -95,3 +95,24 @@ const temples = [
 
 
 ]
+
+function displayTemples(temples) {
+  const gallery = document.querySelector(".gallery");
+
+  temples.forEach(temple => {
+    const figure = document.createElement("figure");
+
+    const img = document.createElement("img");
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.loading = "lazy";
+
+    const caption = document.createElement("figcaption");
+    caption.textContent = temple.templeName;
+
+    figure.appendChild(img);
+    figure.appendChild(caption);
+
+    gallery.appendChild(figure);
+  });
+}
