@@ -67,5 +67,31 @@ const temples = [
     area: 116642,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-  }
+  },
+{
+ templeName: "Apia Samoa",
+    location: "Samoa",
+    dedicated: "2005, September, 4",
+    area: 18691,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/apia-samoa-temple/apia-samoa-temple-13905-main.jpg"
+},
+{
+ templeName: "Newport Beach California",
+    location: "Newport Beach, California",
+    dedicated: "2005, August, 28",
+    area: 17800,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/newport-beach-california-temple/newport-beach-california-temple-46818-main.jpg"
+},
+{
+ templeName: "Burley Idaho",
+    location: "Burley, Idaho",
+    dedicated: "2026, January, 11",
+    area: 45300,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/burley-idaho-temple/burley-idaho-temple-65243-main.jpg"
+},
+
+
 ]
