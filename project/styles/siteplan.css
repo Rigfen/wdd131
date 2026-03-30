@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f2ff; /* Light blue background */
+  color: #003366; /* Dark blue text */
+}
+
+/* Wireframe box style */
+.box {
+  border: 2px solid #003366;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+}
+
+/* Navigation */
+.nav {
+  background-color: #3399ff;
+  color: white;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  height: 150px;
+  background-color: #cce6ff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Headings */
+h1, h2 {
+  font-family: Arial Black, sans-serif;
+}
+
+/* Button */
+button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+}
