@@ -50,3 +50,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #0066cc;
 }
+
+@media (min-width: 768px) {
+  main {
+    max-width: 800px;
+  }
+
+  form {
+    gap: 20px;
+  }
+}
