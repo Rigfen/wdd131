@@ -25,3 +25,9 @@ if (document.getElementById("counter")) {
   localStorage.setItem("reviewCount", count);
   document.getElementById("counter").textContent = count;
 }
+
+const year = new Date().getFullYear();
+document.getElementById("currentyear").textContent = year;
+
+document.getElementById("lastModified").textContent =
+"Last Modification: " + document.lastModified;
