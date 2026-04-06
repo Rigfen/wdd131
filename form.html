@@ -23,53 +23,51 @@
   <form method="get" action="review.html">
 
     
-    <label for="product">Product Name</label>
-    <select id="product" name="product" required>
+    <label for="product">Product Name *</label>
+    <select id="product" name="product" required aria-required="true">
       <option value="" disabled selected>Select a Product ...</option>
     </select>
 
     
-   <fieldset>
-  <legend>Overall Rating</legend>
+    <fieldset>
+      <legend>Overall Rating *</legend>
 
-  <input type="radio" id="rating1" name="rating" value="1" required>
-  <label for="rating1">☆</label>
+      <input type="radio" id="rating1" name="rating" value="1" required>
+      <label for="rating1">☆</label>
 
-  <input type="radio" id="rating2" name="rating" value="2" required>
-  <label for="rating2">☆☆</label>
+      <input type="radio" id="rating2" name="rating" value="2">
+      <label for="rating2">☆☆</label>
 
-  <input type="radio" id="rating3" name="rating" value="3" required>
-  <label for="rating3">☆☆☆</label>
+      <input type="radio" id="rating3" name="rating" value="3">
+      <label for="rating3">☆☆☆</label>
 
-  <input type="radio" id="rating4" name="rating" value="4" required>
-  <label for="rating4">☆☆☆☆</label>
+      <input type="radio" id="rating4" name="rating" value="4">
+      <label for="rating4">☆☆☆☆</label>
 
-  <input type="radio" id="rating5" name="rating" value="5" required>
-  <label for="rating5">☆☆☆☆☆</label>
-
-</fieldset>
+      <input type="radio" id="rating5" name="rating" value="5">
+      <label for="rating5">☆☆☆☆☆</label>
+    </fieldset>
 
     
-    <label for="date">Date of Installation</label>
-    <input type="date" id="date" name="date" required>
+    <label for="date">Date of Installation *</label>
+    <input type="date" id="date" name="date" required aria-required="true">
 
     
     <fieldset>
-  <legend>Useful Features</legend>
+      <legend>Useful Features</legend>
 
-  <input type="checkbox" id="feature1" name="features" value="Durable">
-  <label for="feature1">Durable</label>
+      <input type="checkbox" id="feature1" name="features" value="Durable">
+      <label for="feature1">Durable</label>
 
-  <input type="checkbox" id="feature2" name="features" value="Lightweight">
-  <label for="feature2">Lightweight</label>
+      <input type="checkbox" id="feature2" name="features" value="Lightweight">
+      <label for="feature2">Lightweight</label>
 
-  <input type="checkbox" id="feature3" name="features" value="Affordable">
-  <label for="feature3">Affordable</label>
+      <input type="checkbox" id="feature3" name="features" value="Affordable">
+      <label for="feature3">Affordable</label>
 
-  <input type="checkbox" id="feature4" name="features" value="Easy to Use">
-  <label for="feature4">Easy to Use</label>
-
-</fieldset>
+      <input type="checkbox" id="feature4" name="features" value="Easy to Use">
+      <label for="feature4">Easy to Use</label>
+    </fieldset>
 
     
     <label for="review">Written Review</label>
