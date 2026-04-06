@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paragliding adventures, training, and gear for thrill seekers.">
+  <meta name="author" content="Jared Larsen">
+  <title>Paragliding Adventures</title>
+
+  <link rel="stylesheet" href="styles/paraglide.css">
+  <script src="scripts/paraglide.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="images/logo.avif" alt="Paragliding logo" class="logo">
+    <h1>Paragliding Adventures</h1>
+  </div>
+
+  <nav>
+    <a href="paraglide.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<body>
+    <main>
+  <h2>Book a Flight</h2>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="experience">Experience Level:</label>
+    <select id="experience" required>
+      <option value="">Select</option>
+      <option>Beginner</option>
+      <option>Intermediate</option>
+      <option>Advanced</option>
+    </select>
+
+    <input type="submit" value="Book Now">
+  </form>
+</main>
+
+<footer>
+  <p>© <span id="currentyear"></span> Jared Larsen</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
