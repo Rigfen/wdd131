@@ -67,5 +67,13 @@ if (visits > 0) {
 }
 
 
+
+
 displayFlights();
 handleForm();
+
+card.innerHTML = `
+  <h3>${flight.location}</h3>
+  <p><strong>Price:</strong> $${flight.price}</p>
+  <p><strong>Level:</strong> ${flight.level}</p>
+`;

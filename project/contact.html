@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Paragliding adventures, training, and gear for thrill seekers.">
+  <meta name="description" content="Book your paragliding adventure.">
   <meta name="author" content="Jared Larsen">
-  <title>Paragliding Adventures</title>
+  <title>Contact | Paragliding Adventures</title>
 
   <link rel="stylesheet" href="styles/paraglide.css">
   <script src="scripts/paraglide.js" defer></script>
@@ -25,27 +25,38 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<body>
-    <main>
+
+<main class="contact-page">
+
   <h2>Book a Flight</h2>
+  <p class="subtitle">Fill out the form below and we’ll get you flying!</p>
 
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" required>
+  <form class="contact-form">
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" required placeholder="Enter your name">
+    </div>
 
-    <label for="experience">Experience Level:</label>
-    <select id="experience" required>
-      <option value="">Select</option>
-      <option>Beginner</option>
-      <option>Intermediate</option>
-      <option>Advanced</option>
-    </select>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="Enter your email">
+    </div>
 
-    <input type="submit" value="Book Now">
+    <div class="form-group">
+      <label for="experience">Experience Level</label>
+      <select id="experience" required>
+        <option value="">Select</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+    </div>
+
+    <button type="submit">Book Now</button>
+
   </form>
+
 </main>
 
 <footer>
