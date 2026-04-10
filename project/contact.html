@@ -35,22 +35,28 @@
 
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" id="name" required placeholder="Enter your name">
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
     </div>
 
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" id="email" required placeholder="Enter your email">
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
     </div>
 
     <div class="form-group">
       <label for="experience">Experience Level</label>
-      <select id="experience" required>
+      <select id="experience" name="experience" required>
         <option value="">Select</option>
         <option>Beginner</option>
         <option>Intermediate</option>
         <option>Advanced</option>
       </select>
+    </div>
+
+    <!-- ✅ NEW DATE FIELD -->
+    <div class="form-group">
+      <label for="date">Preferred Flight Date</label>
+      <input type="date" id="date" name="date" required>
     </div>
 
     <button type="submit">Book Now</button>
